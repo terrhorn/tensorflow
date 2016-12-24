@@ -1,0 +1,12 @@
+version: "2.0"
+
+services:
+
+  # usage: docker-compose run tensorflow
+  tensorflow:
+    build: .
+    image: terryhorner/tensorflow
+    ports:
+      - "8888:8888"
+    expose:
+      - 8888
